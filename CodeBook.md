@@ -13,7 +13,7 @@ The acceleration signal was also separated into body and gravity acceleration si
 Each signal has 3 coordinates (X, Y, Z), so each window gives 3 x 3 = 9 different sorts of 128 data each that were recorded in files, by rows of 128 elements either in the nine files of "UCI HAR Dataset/train/Inertial Signals" or in the nine files of "UCI HAR Dataset/test/Inertial Signals". This partition corresponds to the 70% of the subjects randomly selected for generating the training data, the other 30%  generating the test data.  
 
 * The activity and the subject  who carried out the activity are recorded at a same number of row in the files "UCI HAR Dataset/train/y_train.txt" and "UCI HAR Dataset/train/subject_train.txt", respectively, if selected for the training set, and similarly if selected for the test set. The data mentioned above are recorded at this same number of row as well.  
-Note that several rows show the same activity and the same subject, due to the fact that there are several records for the same subject carrying out the same activity.
+Note that several rows show the same activity and the same subject, due to the fact that there are several records (several sliding windows) for the same subject carrying out the same activity.
 
 * A series of calculations (such as derivation, magnitude using the Euclidean norm, Fast Fourier Transform, then mean, standard deviation ...) were performed on the rows of same number in the nine files of "UCI HAR Dataset/train/Inertial Signals" giving a row of same number of 561 elements in the file "UCI HAR Dataset/train/X_train", and similarly for the test set.  
 The results of these calculations are normalized and bounded within [-1,1], so are without any units.  
