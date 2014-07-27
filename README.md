@@ -369,7 +369,7 @@ tdfaverage <- sapply(s, function(group) colMeans(group[,3:ncol(DFms)]))
 `sapply` returns here a matrix with 66 (= 68-2) rows and 180 columns, so that
 
 the names of the columns are made of the 180 levels, lexically ordered,  
-the names of the rows are made of the last 66 names of the columns of DFms (in the same order), those of dffeatures$V2 indicating a measurement on the mean and standard deviation for each measurement.  
+the names of the rows are made of the last 66 names of the columns of DFms (in the same order), those indicating a measurement on the mean and standard deviation for each measurement.  
 Each column is made of the averages of these 66 variables for a given group.
 
 We have to transpose tdfaverage to get back the names of the rows as names of columns as they were in DFms : 
